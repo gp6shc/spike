@@ -12,7 +12,7 @@ get_header(); ?>
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'spike' ); ?></h1>
+					<h2 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'spike' ); ?></h2>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
@@ -40,8 +40,7 @@ get_header(); ?>
 					<?php endif; ?>
 
 					<?php
-						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'spike' ), convert_smilies( ':)' ) ) . '</p>';
+						$archive_content = '<p>Try looking in the monthly archives.</p>';
 						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 					?>
 
