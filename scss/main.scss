@@ -1,0 +1,34 @@
+@import 'wp-style'; // Theme info; Adds style to all WordPress specific classes
+@import 'normalize'; // Get all browsere on the same page
+
+@import 'variables'; // Set all global variables
+@import 'grid'; // Grid structure
+
+@import 'global'; // The primary chunk of style
+
+
+// Media query specific style for responsive design
+
+@media only screen and (min-width: 1600px) {
+	@import 'media\ queries/1600';
+}
+
+@media only screen and (max-width: 1024px) {
+	@import 'media\ queries/1024';
+}
+
+@media only screen and (max-width: 960px) {
+	@import 'media\ queries/960';
+}
+
+@media only screen and (max-width: 768px) {
+	@import 'media\ queries/768';
+}
+
+@media only screen and (max-width: 640px) {
+	@import 'media\ queries/640';
+}
+
+@media only screen and (max-width: 480px) {
+	@import 'media\ queries/480';
+}
